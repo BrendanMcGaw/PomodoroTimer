@@ -1,0 +1,98 @@
+body {
+  font-family: 'El Messiri', sans-serif;
+  background-color: #f4f4f4;
+  color: #3a3535;
+  margin: 0;
+}
+
+#time {
+  padding: 15px 0px;
+  margin: 0px;
+}
+
+.top-container {
+  background-color: #232020;
+  border-bottom: 3px #ff7315 solid;
+  width: 100%;
+  height: 115px;
+
+}
+
+.speechBubble {
+  position: absolute;
+  top: -25px;
+  left: 85px;
+  z-index: 1;
+}
+
+.logo {
+  color: #232020;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  left: 108px;
+}
+
+.garfieldImage {
+  display: block;
+  position: relative;
+  bottom: 24px;
+}
+
+.timer-container {
+  font-size: 32px;
+  text-align: center;
+  width: 24%;
+  position: relative;
+  left: 37%;
+  padding: 5px;
+  border-radius: 22%;
+  margin-top: 55px;
+  margin-bottom: 18px;
+  background-color: #ff7315;
+  border: #232020 2px solid;
+  box-shadow: 6px 8px #3a3535;
+}
+
+/*-------- Button styles, hover and click effect of "Active" --------*/
+/*-------------------------------------------------------------------*/
+.button-continer {
+  text-align: center;
+}
+.buttonstyle {
+  font-size: 24px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 4px 32px;
+  border-radius: 8px;
+  background-color: #ff7315;
+  border-color: #232020;
+  box-shadow: 5px 5px #232020;
+  color: #3a3535;
+  transition-duration: 0.2s;
+  outline: none;
+}
+.buttonstyle:hover { /* Gives an effect when hovering over a button. */
+  background-color: #f4f4f4;
+  color: #ff7315;
+  border-color: #ff7315;
+}
+.buttonstyle:active { /* Transforms the position of the buttons and adds effects when clicked */
+  background-color: #f4f4f4;
+  color: #ff7315;
+  border-color: #ff7315;
+  box-shadow: 2px 2px #3a3535;
+  outline: none;
+  transform: translateY(6px);
+  transform: translateX(3px);
+}
+
+/* --------------===========================================================-------------- */
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+#finished {
+  text-align: center;
+}

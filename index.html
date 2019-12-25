@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Tomato Meter </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-container">
+      <h2 class="logo">Pomodoro</h2>
+      <img class="speechBubble" src="images/speechBubble.svg" alt="">
+      <img class="garfieldImage" src="images/Garfield_the_Cat.svg" alt="">
+    </div>
+    <div class="timer-container">
+      <h1 id="time">25:00</h1>
+    </div>
+    <div class="flex-container">
+      <form class="form-container noselect" action="index.html" method="post">
+        <button class = "start buttonstyle" type="button" onclick="startTimer()" name="button">Start</button>
+        <button class = "stop buttonstyle" type="button" onclick="stopTimer()" name="button">Stop</button>
+        <button class = "reset buttonstyle" type="button" onclick="resetTimer()" name="button">Reset</button>
+      </form>
+    </div>
+
+    <h1 id="finished"> This is a tomato timer.</h1>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
