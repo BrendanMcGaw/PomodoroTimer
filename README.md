@@ -13,5 +13,5 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 
 # //TODO:
 
-# Add session data storage for page change stat showing
-
+# Add long break after 4 25 minute study sessions.
+# Add double digits to each html element for visual representation.
