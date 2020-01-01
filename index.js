@@ -25,7 +25,9 @@ function startTimer() {
       breakTime.innerHTML = "Congratulations, you have successfully studied for 25 minutes.";
       studyCompleteSound.play();
       breakRounds++
-
+      if (seconds == 0 && minutes == 0 && timesCompleted == 4) {
+        longBreak();
+      }
       if (breakRounds % 2 == 0) { // if breakRounds returns an even number, it will run the study timer.
         breakTime.innerHTML = "Break times over, get back to study!";
         studyCompleteSound.play();
@@ -47,6 +49,13 @@ function startTimer() {
       }
     }
   }, 1000);
+}
+function longBreak() {
+  timer.innerHTML = "25:00";
+  breakTime.innerHTML = "You've earned yourself a 25 minute break, well done!";
+  minutes = 24;
+  seconds = 60;
+  startTimer();
 }
 
 function stopTimer() {
