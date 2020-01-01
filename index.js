@@ -3,9 +3,9 @@
 var timer = document.getElementById("time");
 var breakTime = document.getElementById("finished");
 var amountOfStudyCompleted = document.getElementById("AmountOfStudyDone");
-var seconds = 3;
-var minutes = 0;
-var breakRounds = 7;
+var seconds = 60;
+var minutes = 24;
+var breakRounds = 0;
 var timeStudied = 0;
 
 var visualStudyTime = "25:00";
@@ -14,8 +14,6 @@ var visualLongBreakTime = "30:00";
 
 var intervalId;
 var studyCompleteSound = new Audio('audio/Finished Study Session Sound.mov');
-
-myStorageDevice = window.sessionStorage;
 
 window.onload = function timeTotalStudied() {
   amountOfStudyCompleted.innerHTML = "You completed " + timeStudied + " minutes of study.";
