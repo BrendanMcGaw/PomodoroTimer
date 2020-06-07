@@ -13,7 +13,8 @@ var visualShortBreakTime = "05:00";
 var visualLongBreakTime = "30:00";
 
 var intervalId;
-var studyCompleteSound = new Audio('audio/Finished Study Session Sound.mov');
+var studyCompleteSound = new Audio('audio/studyFinishedSound.wav');
+studyCompleteSound.volume = 0.1;
 
 window.onload = function timeTotalStudied() {
   amountOfStudyCompleted.innerHTML = "You completed " + timeStudied + " minutes of study.";
